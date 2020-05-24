@@ -10,7 +10,7 @@ If you have any problems when attempting to compile it. Try using `make qmake_al
 
 ## Details
 
-I only tested it in Kde Manjaro, however it may works in other environments or systems. To make it blur use the compositor of your system. You can use it to make beautiful applications, you just need to change the HTML and CSS file, and then reload. Don't forget of setting the main background color to have some value of transparency. The window doesn't resize yet. Unless you remove the frameless option, it make the built-in buttons unuseful.
+I only tested it in Kde Manjaro, however it may works in other environments or systems. To make it blur use the compositor of your system. You can use it to make beautiful applications, you just need to change the HTML and CSS file, and then reload. Don't forget of setting the main background color to have some value of transparency. The window doesn't resize yet. Unless you remove the frameless option, it make the built-in buttons unuseful. The roundness in the corners is also brought by the compositor, but it might be possible to make the window round with qt. 
 
 ## How it works
 
