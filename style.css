@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/*   background: linear-gradient(to right, #fdfbfba0, #ebedeea0 70%); */
+  background: #49494900; /* Here is the secret */
+}
+
+.text {
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #4ec1f5, #f441a5, #ffcb27, #4ec1f5 /* to right, #ff6801 / #30cfd0 / 0%, #ffcb27 / #330867 / 100% */);
+  background-size: 400%;
+  animation: animate 5s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20vw;
+  font-family: 'Comfortaa', cursive;
+  z-index: 0;
+}
+
+@keyframes animate {
+  0% {
+  background-position: 0%;
+  }
+ 100% {
+  background-position: 400%;
+  }
+}
