@@ -21,7 +21,7 @@ Window {
     WebEngineView {
         anchors.fill: parent
         visible: true
-        url: "file:///home/lucas/cpp/testes/window-content/index.html"
+        url: "file:///home/lucas/git/qt-html-transparency-example/index.html"
         backgroundColor: "transparent"
     }
 
@@ -42,10 +42,10 @@ Window {
         onMouseYChanged: registerWindow.y += (mouseY - lastMouseY)
     }
 
-    Rectangle{
+    Rectangle {
         id:titlebar
         width: parent.width
-        Rectangle{
+        Rectangle {
             id:appclose
             x: 772
             y:10
@@ -67,7 +67,7 @@ Window {
                     color: "#f04579"
                 }
             }
-            MouseArea{
+            MouseArea {
                 x: 0
                 y: 0
                 width: 40
@@ -78,7 +78,7 @@ Window {
                 onClicked: Qt.quit()
             }
         }
-        Rectangle{
+        Rectangle {
         id:appmaximize
         x: 709
         y:10
@@ -100,15 +100,16 @@ Window {
                 color: "#54db63"
             }
         }
-        MouseArea{
+        MouseArea {
             width: parent.width
             height: parent.height
+            property bool max
             hoverEnabled: true
-            onClicked: registerWindow.visibility = Window.FullScreen
-            onDoubleClicked: registerWindow.visibility = Window.Windowed
+            onClicked: if (max == true) { registerWindow.visibility = Window.Windowed; max=false }
+                       else { registerWindow.visibility = Window.FullScreen; max=true }
         }
-        }
-        Rectangle{
+     }
+        Rectangle {
         id:appminimize
         x: 739
         y:10
@@ -130,7 +131,7 @@ Window {
                 color: "#6078ea"
             }
         }
-        MouseArea{
+        MouseArea {
             width: parent.width
             height: parent.height
             hoverEnabled: true

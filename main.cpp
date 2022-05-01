@@ -1,5 +1,4 @@
-// Compile it with 'mkdir build && cd build';
-// 'qmake ../window-content.pro -spec linux-g++' and 'make'
+// 'qmake ../window-content.pro -spec linux-g++ && make'
 #include "mainwindow.h"
 
 #include <QApplication>

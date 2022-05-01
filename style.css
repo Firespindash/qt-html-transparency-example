@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'Comfortaa';
+	src: ('Comfortaa-Variable.ttf') format('truetype');
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -18,8 +23,8 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 20vw;
-  font-family: 'Comfortaa', cursive;
-  z-index: 0;
+  font-family: 'Comfortaa';
+  /* z-index: 0; */
 }
 
 @keyframes animate {
